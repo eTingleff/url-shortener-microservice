@@ -66,7 +66,7 @@ var checkForExisting = function(input, db, callback) {
 }
 
 var urlChecker = function(input, callback) {
-  if (validUrl.isHttpUri(input) || validUrl.isHttpsUri(input)) {
+  if (validUrl.isHttpUri(input) || validUrl.isHttpsUri(input) && input.indexOf('www.') > -1) {
     var parsed = urlParse.parse(input);
     var host = parsed.hostname;
     console.log(host);
