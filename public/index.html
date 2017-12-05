@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>URL Shortener Microservice</title>
+      <meta name="URL Shortener Microservice" content="Free Code Camp API Project">
+      <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="/style.css">
+   </head>
+
+   <body>
+     <div class="container">
+         <h1>URL Shortener Microservice</h1>
+         <h3>A Free Code Camp API Project Created by Eric Tingleff</h3>
+     </div>
+     <div>
+       <h2>Instructions</h2>
+       <br/>
+       <h3>
+         Shorten a URL:
+       </h3>
+       <h4>Add the following to the end of this page's URL:</h4>
+       <div class="urlEnd">/shorten/&lt;URL-to-be-shortened&gt;</div>
+       <h4>
+         Note:
+       </h4>
+       <ul>
+         <li>URLs for non existant websites will not be shortened</li>
+         <li>URLs must include an 'http://' or 'https://' prefix</li>
+       </ul>
+       <br/>
+       <br/>
+       <h2>
+         Example
+       </h2>
+       <br/>
+       <h4>
+         To shorten https://youtube.com
+       </h4>
+       <div class="example">
+         Navigate to https://url-shortener-microservice-fcc.glitch.me/shorten/https://www.youtube.com
+       </div>
+       <div>
+         Example Response:
+       </div>
+       <div class="example">
+         Original URL: https://www.youtube.com,
+       </div>
+       <div class="example">
+         Shortened URL: https://url-shortener-microservice-fcc.glitch.me/4028
+       </div>
+       <br/>
+       <div>
+         Navigating to the shortened URL should direct to https://www.youtube.com
+       </div>
+     </div>
+     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous">
+    </script>
+   </body>
+
+</html>
